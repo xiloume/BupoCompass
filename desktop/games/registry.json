@@ -1,0 +1,1662 @@
+{
+  "games": [
+    {
+      "id": "stardew-valley",
+      "name": "Stardew Valley",
+      "processNames": [
+        "Stardew Valley.exe",
+        "StardewValley.exe"
+      ],
+      "saveLocations": [
+        "%APPDATA%/StardewValley/Saves"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*/SaveGameInfo",
+          "parser": "stardewSave"
+        },
+        {
+          "pattern": "*/*_*",
+          "parser": "stardewSave"
+        }
+      ]
+    },
+    {
+      "id": "terraria",
+      "name": "Terraria",
+      "processNames": [
+        "Terraria.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/Documents/My Games/Terraria/Players",
+        "%USERPROFILE%/Documents/My Games/Terraria/Worlds"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.plr",
+          "parser": "none"
+        },
+        {
+          "pattern": "*.wld",
+          "parser": "none"
+        }
+      ]
+    },
+    {
+      "id": "minecraft-java",
+      "name": "Minecraft Java Edition",
+      "processNames": [
+        "javaw.exe",
+        "java.exe"
+      ],
+      "saveLocations": [
+        "%APPDATA%/.minecraft/saves"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*/level.dat",
+          "parser": "minecraftLevel"
+        },
+        {
+          "pattern": "*/stats/*.json",
+          "parser": "minecraftStats"
+        },
+        {
+          "pattern": "*/advancements/*.json",
+          "parser": "minecraftAdvancements"
+        }
+      ]
+    },
+    {
+      "id": "minecraft-bedrock",
+      "name": "Minecraft Bedrock",
+      "processNames": [
+        "Minecraft.Windows.exe"
+      ],
+      "saveLocations": [
+        "%LOCALAPPDATA%/Packages/Microsoft.MinecraftUWP_8wekyb3d8bbwe/LocalState/games/com.mojang/minecraftWorlds"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*/level.dat",
+          "parser": "auto"
+        },
+        {
+          "pattern": "*/levelname.txt",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "hollow-knight",
+      "name": "Hollow Knight",
+      "processNames": [
+        "hollow_knight.exe",
+        "Hollow Knight.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/AppData/LocalLow/Team Cherry/Hollow Knight"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "user*.dat",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "elden-ring",
+      "name": "Elden Ring",
+      "processNames": [
+        "eldenring.exe",
+        "start_protected_game.exe"
+      ],
+      "saveLocations": [
+        "%APPDATA%/EldenRing"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*/ER0000.sl2",
+          "parser": "bethesdaSave"
+        }
+      ]
+    },
+    {
+      "id": "darksouls3",
+      "name": "Dark Souls III",
+      "processNames": [
+        "DarkSoulsIII.exe"
+      ],
+      "saveLocations": [
+        "%APPDATA%/DarkSoulsIII"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*/DS30000.sl2",
+          "parser": "bethesdaSave"
+        }
+      ]
+    },
+    {
+      "id": "skyrim",
+      "name": "Skyrim",
+      "processNames": [
+        "SkyrimSE.exe",
+        "TESV.exe",
+        "SkyrimVR.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/Documents/My Games/Skyrim Special Edition/Saves",
+        "%USERPROFILE%/Documents/My Games/Skyrim/Saves"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.ess",
+          "parser": "bethesdaSave"
+        },
+        {
+          "pattern": "*.skse",
+          "parser": "bethesdaSave"
+        }
+      ]
+    },
+    {
+      "id": "fallout4",
+      "name": "Fallout 4",
+      "processNames": [
+        "Fallout4.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/Documents/My Games/Fallout4/Saves"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.fos",
+          "parser": "bethesdaSave"
+        }
+      ]
+    },
+    {
+      "id": "rimworld",
+      "name": "RimWorld",
+      "processNames": [
+        "RimWorldWin64.exe",
+        "RimWorldWin.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/AppData/LocalLow/Ludeon Studios/RimWorld by Ludeon Studios/Saves"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.rws",
+          "parser": "rimworldSave"
+        }
+      ]
+    },
+    {
+      "id": "factorio",
+      "name": "Factorio",
+      "processNames": [
+        "factorio.exe"
+      ],
+      "saveLocations": [
+        "%APPDATA%/Factorio/saves"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.zip",
+          "parser": "factorioSave"
+        }
+      ]
+    },
+    {
+      "id": "cities-skylines",
+      "name": "Cities: Skylines",
+      "processNames": [
+        "Cities.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/AppData/Local/Colossal Order/Cities_Skylines/Saves"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.crp",
+          "parser": "citiesSkylinesSave"
+        }
+      ]
+    },
+    {
+      "id": "civ6",
+      "name": "Civilization VI",
+      "processNames": [
+        "CivilizationVI.exe",
+        "CivilizationVI_DX12.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/Documents/My Games/Sid Meier's Civilization VI/Saves"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "**/*.Civ6Save",
+          "parser": "none"
+        }
+      ]
+    },
+    {
+      "id": "valheim",
+      "name": "Valheim",
+      "processNames": [
+        "valheim.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/AppData/LocalLow/IronGate/Valheim"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "characters/*.fch",
+          "parser": "none"
+        },
+        {
+          "pattern": "worlds/*.fwl",
+          "parser": "none"
+        },
+        {
+          "pattern": "worlds_local/*.fwl",
+          "parser": "none"
+        }
+      ]
+    },
+    {
+      "id": "subnautica",
+      "name": "Subnautica",
+      "processNames": [
+        "Subnautica.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/AppData/LocalLow/Unknown Worlds/Subnautica/Subnautica/SavedGames"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*/gameinfo.json",
+          "parser": "genericJSON"
+        },
+        {
+          "pattern": "*/*.json",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "dont-starve",
+      "name": "Don't Starve Together",
+      "processNames": [
+        "dontstarve_steam.exe",
+        "dontstarve.exe",
+        "dontstarve_dedicated_server_nullrenderer.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/Documents/Klei/DoNotStarveTogether",
+        "%USERPROFILE%/Documents/Klei/DoNotStarve"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "**/*.lua",
+          "parser": "dontStarveSave"
+        }
+      ]
+    },
+    {
+      "id": "dead-cells",
+      "name": "Dead Cells",
+      "processNames": [
+        "deadcells.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/AppData/Roaming/GoblinzStudio/DeadCells"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.dat",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "risk-of-rain-2",
+      "name": "Risk of Rain 2",
+      "processNames": [
+        "Risk of Rain 2.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/AppData/LocalLow/Hopoo Games, LLC/Risk of Rain 2/UserProfiles"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.xml",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "the-witcher-3",
+      "name": "The Witcher 3",
+      "processNames": [
+        "witcher3.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/Documents/The Witcher 3/gamesaves"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.sav",
+          "parser": "none"
+        }
+      ]
+    },
+    {
+      "id": "cyberpunk-2077",
+      "name": "Cyberpunk 2077",
+      "processNames": [
+        "Cyberpunk2077.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/Saved Games/CD Projekt Red/Cyberpunk 2077"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*/metadata.9.json",
+          "parser": "genericJSON"
+        },
+        {
+          "pattern": "*/sav.dat",
+          "parser": "none"
+        }
+      ]
+    },
+    {
+      "id": "path-of-exile",
+      "name": "Path of Exile",
+      "processNames": [
+        "PathOfExile.exe",
+        "PathOfExile_x64.exe",
+        "PathOfExileSteam.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/Documents/My Games/Path of Exile"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "**/*.cfg",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "wow",
+      "name": "World of Warcraft",
+      "processNames": [
+        "Wow.exe",
+        "WowClassic.exe",
+        "WowB.exe",
+        "WowT.exe"
+      ],
+      "saveLocations": [
+        "C:/Program Files (x86)/World of Warcraft/_retail_/WTF",
+        "C:/Program Files (x86)/World of Warcraft/_classic_/WTF"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "**/*.lua",
+          "parser": "auto"
+        },
+        {
+          "pattern": "**/*.txt",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "noita",
+      "name": "Noita",
+      "processNames": [
+        "noita.exe"
+      ],
+      "saveLocations": [
+        "%LOCALAPPDATA%/../LocalLow/Nolla_Games_Noita/save00"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "**/*.xml",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "binding-of-isaac",
+      "name": "Binding of Isaac: Repentance",
+      "processNames": [
+        "isaac-ng.exe",
+        "Isaac.exe"
+      ],
+      "saveLocations": [
+        "%USERPROFILE%/Documents/My Games/Binding of Isaac Repentance",
+        "%USERPROFILE%/Documents/My Games/Binding of Isaac Afterbirth+"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.dat",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "satisfactory",
+      "name": "Satisfactory",
+      "processNames": [
+        "FactoryGame-Win64-Shipping.exe",
+        "FactoryGame.exe"
+      ],
+      "saveLocations": [
+        "%LOCALAPPDATA%/FactoryGame/Saved/SaveGames"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "**/*.sav",
+          "parser": "none"
+        }
+      ]
+    },
+    {
+      "id": "no-mans-sky",
+      "name": "No Man's Sky",
+      "processNames": [
+        "NMS.exe"
+      ],
+      "saveLocations": [
+        "%APPDATA%/HelloGames/NMS"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "**/save*.hg",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "starbound",
+      "name": "Starbound",
+      "processNames": [
+        "starbound.exe",
+        "starbound_opengl.exe"
+      ],
+      "saveLocations": [
+        "C:/Program Files (x86)/Steam/steamapps/common/Starbound/storage/player",
+        "C:/Program Files (x86)/Steam/steamapps/common/Starbound/storage/universe"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.shipworld",
+          "parser": "auto"
+        },
+        {
+          "pattern": "*.player",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "deep-rock-galactic",
+      "name": "Deep Rock Galactic",
+      "processNames": [
+        "FSD-Win64-Shipping.exe"
+      ],
+      "saveLocations": [
+        "%LOCALAPPDATA%/FSD/Saved/SaveGames"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.sav",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "celeste",
+      "name": "Celeste",
+      "processNames": [
+        "Celeste.exe"
+      ],
+      "saveLocations": [
+        "C:/Program Files (x86)/Steam/steamapps/common/Celeste/Saves",
+        "%USERPROFILE%/AppData/Local/Celeste/Saves"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "*.celeste",
+          "parser": "auto"
+        },
+        {
+          "pattern": "settings.celeste",
+          "parser": "auto"
+        }
+      ]
+    },
+    {
+      "id": "graveyard-keeper",
+      "name": "Graveyard Keeper",
+      "processNames": [
+        "Graveyard Keeper.exe",
+        "GraveyardKeeper.exe"
+      ],
+      "steamAppId": 599140,
+      "saveLocations": [
+        "%USERPROFILE%/AppData/LocalLow/Lazy Bear Games/Graveyard Keeper",
+        "%USERPROFILE%/AppData/LocalLow/Lazy Bear Games_/Graveyard Keeper"
+      ],
+      "scanTargets": [
+        {
+          "pattern": "save_*.dat",
+          "parser": "graveyardKeeperSave"
+        },
+        {
+          "pattern": "*.json",
+          "parser": "auto"
+        },
+        {
+          "pattern": "settings.dat",
+          "parser": "auto"
+        }
+      ],
+      "steamAchievementMap": {
+        "bury_1_body": "Welcome",
+        "bury_10_bodies": "Beggars cant be choosers",
+        "bury_50_bodies": "Body of evidence",
+        "first_slice": "I dig it",
+        "first_slice_10": "Master alchemist",
+        "church_up_1": "Faithful follower",
+        "church_up_2": "Friends with the Inquisitor",
+        "fish_1": "Master chef",
+        "fish_200": "Master farmer",
+        "fish_goldfish": "Master smith",
+        "gerry_friend": "Meet Gerry the talking skull",
+        "donkey_friend": "Speak to the Donkey",
+        "witch_visit": "Visit the Witch in the swamp",
+        "bishop_visit": "Talk to the Bishop",
+        "astrologer_visit": "Visit the Astrologer",
+        "lighthouse_built": "Open the Lighthouse",
+        "refugee_camp": "Reach the Refugee Camp",
+        "sorrow_hill": "Find the Sorrow Hill",
+        "inquisitor_defeated": "Defeat the Inquisitor",
+        "teleport_stone": "Build the Teleportation Stone",
+        "dungeon_boss": "Boss du Donjon",
+        "game_completed": "Game completed",
+        "tavern_buy": "Buy the tavern",
+        "tavern_floor": "Renovate floor",
+        "stranger_sins": "Complete the Stranger Sins DLC",
+        "goc_complete": "Complete Game of Crone DLC",
+        "bss_complete": "Complete Better Save Soul DLC"
+      },
+      "checklistTemplate": {
+        "zones": [
+          {
+            "name": "Quetes principales",
+            "items": [
+              "Speak to the Donkey",
+              "Meet Gerry the talking skull",
+              "Visit the Witch in the swamp",
+              "Talk to the Bishop",
+              "Visit the Astrologer",
+              "Open the Lighthouse",
+              "Reach the Refugee Camp",
+              "Find the Sorrow Hill",
+              "Defeat the Inquisitor",
+              "Build the Teleportation Stone",
+              "Complete the Stranger Sins DLC",
+              "Complete Game of Crone DLC",
+              "Complete Better Save Soul DLC"
+            ]
+          },
+          {
+            "name": "PNJ (vendredis hebdomadaires)",
+            "items": [
+              "Astrologer (Lundi)",
+              "Inquisitor (Mardi)",
+              "Royal Physician (Mercredi)",
+              "Merchant (Jeudi)",
+              "Bishop (Vendredi)",
+              "Snake (Samedi)",
+              "Witch (Dimanche)",
+              "Donkey",
+              "Gerry",
+              "Horadric",
+              "Ms. Charm",
+              "Pastor",
+              "Beekeeper",
+              "Innkeeper",
+              "Sheep Farmer",
+              "Clay Tycoon",
+              "Lighthouse Keeper",
+              "Carpenter",
+              "Refugee Captain",
+              "Refugee Doctor"
+            ]
+          },
+          {
+            "name": "Technologies (Arbre)",
+            "items": [
+              "Body alteration I",
+              "Body alteration II",
+              "Body alteration III",
+              "Embalming I",
+              "Embalming II",
+              "Embalming III",
+              "Theology I",
+              "Theology II",
+              "Theology III",
+              "Anatomy",
+              "Medicine",
+              "Alchemy I",
+              "Alchemy II",
+              "Alchemy III",
+              "Carpentry I",
+              "Carpentry II",
+              "Carpentry III",
+              "Carpentry IV",
+              "Stonecutting I",
+              "Stonecutting II",
+              "Stonecutting III",
+              "Smithing I",
+              "Smithing II",
+              "Smithing III",
+              "Smithing IV",
+              "Cooking I",
+              "Cooking II",
+              "Cooking III",
+              "Cooking IV",
+              "Brewing I",
+              "Brewing II",
+              "Brewing III",
+              "Farming I",
+              "Farming II",
+              "Farming III",
+              "Bookcraft I",
+              "Bookcraft II",
+              "Bookcraft III",
+              "Architecture I",
+              "Architecture II",
+              "Architecture III",
+              "Mining I",
+              "Mining II",
+              "Mining III"
+            ]
+          },
+          {
+            "name": "Donjon (Etages)",
+            "items": [
+              "Etage 1",
+              "Etage 2",
+              "Etage 3",
+              "Etage 4",
+              "Etage 5",
+              "Etage 6",
+              "Etage 7",
+              "Etage 8",
+              "Etage 9",
+              "Etage 10",
+              "Boss du Donjon",
+              "Tous les coffres ouverts"
+            ]
+          },
+          {
+            "name": "Cimetiere - Tombes a 12+ etoiles",
+            "items": [
+              "Tombe 1",
+              "Tombe 2",
+              "Tombe 3",
+              "Tombe 4",
+              "Tombe 5",
+              "Tombe 6",
+              "Tombe 7",
+              "Tombe 8",
+              "Tombe 9",
+              "Tombe 10",
+              "Note de qualite cimetiere : 100"
+            ]
+          },
+          {
+            "name": "Eglise - Sermons (Note de qualite)",
+            "items": [
+              "Bench amelioree x10",
+              "Decoration murale x10",
+              "Vitrail x4",
+              "Chandelier x4",
+              "Statue d'autel",
+              "Decor de pierre",
+              "Note de qualite eglise : 50+"
+            ]
+          },
+          {
+            "name": "Zodiacs (Constellations)",
+            "items": [
+              "Worker",
+              "Soldier",
+              "Adventurer",
+              "Diplomat",
+              "Witch",
+              "Healer",
+              "Crafter",
+              "Farmer",
+              "Cook",
+              "Alchemist",
+              "Builder",
+              "Merchant"
+            ]
+          },
+          {
+            "name": "Religion - Tablettes de pierre",
+            "items": [
+              "Tablette I",
+              "Tablette II",
+              "Tablette III",
+              "Tablette IV",
+              "Tablette V",
+              "Tablette VI",
+              "Tablette VII",
+              "Tablette VIII",
+              "Tablette IX",
+              "Tablette X"
+            ]
+          },
+          {
+            "name": "Recettes de cuisine",
+            "items": [
+              "Bread",
+              "Pie",
+              "Cake",
+              "Steak",
+              "Fish soup",
+              "Wine",
+              "Beer",
+              "Mead",
+              "Coffee",
+              "Sausage",
+              "Cheese",
+              "Yogurt",
+              "Smoked meat",
+              "Roasted vegetables",
+              "Honey cake"
+            ]
+          },
+          {
+            "name": "Stranger Sins (Taverne DLC)",
+            "items": [
+              "Buy the tavern",
+              "Renovate floor",
+              "Renovate walls",
+              "Hire a cook",
+              "Hire a waiter",
+              "First event hosted",
+              "All beverages on menu",
+              "All foods on menu",
+              "Maximum tavern reputation"
+            ]
+          },
+          {
+            "name": "Game of Crone (Camp DLC)",
+            "items": [
+              "Reach the Refugee Camp",
+              "Build first defense",
+              "Repel first attack",
+              "Build all camp buildings",
+              "Recruit 10 refugees",
+              "Defeat all wave attacks",
+              "Complete the camp story"
+            ]
+          },
+          {
+            "name": "Better Save Soul (Hopital DLC)",
+            "items": [
+              "Open the asylum",
+              "Treat first patient",
+              "Hire first doctor",
+              "All wards built",
+              "Cure all illnesses",
+              "Maximum reputation"
+            ]
+          },
+          {
+            "name": "Succes Steam principaux",
+            "items": [
+              "Welcome",
+              "Beggars cant be choosers",
+              "I dig it",
+              "Body of evidence",
+              "Donkeys best friend",
+              "Friends with the Inquisitor",
+              "Faithful follower",
+              "Master alchemist",
+              "Master smith",
+              "Master chef",
+              "Master farmer",
+              "Master builder",
+              "Donjon master",
+              "Game completed"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "steamAppId": 3314790,
+      "checklistTemplate": {
+        "zones": [
+          {
+            "name": "Exploration",
+            "items": [
+              {
+                "name": "Drawer #1",
+                "steamKey": "drawer0",
+                "description": "Unlock the first Drawer",
+                "hidden": false
+              },
+              {
+                "name": "Drawer #2",
+                "steamKey": "drawer1",
+                "description": "Unlock the second Drawer",
+                "hidden": false
+              },
+              {
+                "name": "Drawer #3",
+                "steamKey": "drawer2",
+                "description": "Unlock the third Drawer",
+                "hidden": false
+              },
+              {
+                "name": "Drawer #4",
+                "steamKey": "drawer3",
+                "description": "Unlock the fourth Drawer",
+                "hidden": false
+              },
+              {
+                "name": "A new Hobby",
+                "steamKey": "anewhobby",
+                "description": "Open a Memory Pack",
+                "hidden": false
+              },
+              {
+                "name": "Full Collection",
+                "steamKey": "fullcollection",
+                "description": "Discover all Memory Cards",
+                "hidden": false
+              },
+              {
+                "name": "Database Complete",
+                "steamKey": "completeddatabase",
+                "description": "Unlock all Lucky Charms",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Collection",
+            "items": [
+              {
+                "name": "Lucky Day",
+                "steamKey": "luckyday",
+                "description": "Obtain a Jackpot for the first time",
+                "hidden": false
+              },
+              {
+                "name": "The Number of the Beast",
+                "steamKey": "thenumberofthebeast",
+                "description": "Obtain a 666",
+                "hidden": false
+              },
+              {
+                "name": "Super Mega Ultra Ultimate Win",
+                "steamKey": "supermegaultraultimatewin",
+                "description": "Obtain a Ultimate Jackpot",
+                "hidden": false
+              },
+              {
+                "name": "Patterns Recognition",
+                "steamKey": "patternrecognition",
+                "description": "Obtain 15 patterns (or more) in a single Spin",
+                "hidden": false
+              },
+              {
+                "name": "All My Hard Earned Money",
+                "steamKey": "allmyhardearnedmoney",
+                "description": "Lose 1 Million to a 666",
+                "hidden": false
+              },
+              {
+                "name": "Omnipotent",
+                "steamKey": "omnipotent",
+                "description": "Obtain the Golden Knob",
+                "hidden": false
+              },
+              {
+                "name": "Divine Intervention",
+                "steamKey": "divineintervention",
+                "description": "Obtain a 999",
+                "hidden": false
+              },
+              {
+                "name": "Ascension",
+                "steamKey": "ascension",
+                "description": "Increase the giant number on the wall by 1",
+                "hidden": false
+              },
+              {
+                "name": "The Lord of the Pit",
+                "steamKey": "thelordofthepit",
+                "description": "Transform all Memory Cards into Rainbow Holographic",
+                "hidden": false
+              },
+              {
+                "name": "Scrooge",
+                "steamKey": "scrooge",
+                "description": "Obtain 100 Clover Tickets (or more)",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Progression & niveaux",
+            "items": [
+              {
+                "name": "Near Death Experience",
+                "steamKey": "neardeathexperience",
+                "description": "Survive to the Death Countdown",
+                "hidden": false
+              },
+              {
+                "name": "Rentier",
+                "steamKey": "rentier",
+                "description": "Bring your Interest to 30% or more",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Autres",
+            "items": [
+              {
+                "name": "Corpore Sano",
+                "steamKey": "corporesano",
+                "description": "Take a Piss and a Dump",
+                "hidden": false
+              },
+              {
+                "name": "Aw Dangit!",
+                "steamKey": "awdangit",
+                "description": "Die for the first time",
+                "hidden": false
+              },
+              {
+                "name": "This will Hurt",
+                "steamKey": "thiswillhurt",
+                "description": "Equip a Cadaver Piece",
+                "hidden": false
+              },
+              {
+                "name": "Manifesting",
+                "steamKey": "manifesting",
+                "description": "Bring a Symbol's Chances to 60% or more",
+                "hidden": false
+              },
+              {
+                "name": "The Structure",
+                "steamKey": "thestructure",
+                "description": "Get out of the Room",
+                "hidden": false
+              },
+              {
+                "name": "It's Not an Addiction",
+                "steamKey": "itsnotanaddiction",
+                "description": "Deposit 1 Million Coins",
+                "hidden": false
+              },
+              {
+                "name": "It's Dedication",
+                "steamKey": "itsdedication",
+                "description": "Deposit 1 Billion Coins",
+                "hidden": false
+              },
+              {
+                "name": "Cultist",
+                "steamKey": "cultist",
+                "description": "Bring 666 Chances to 10% or more",
+                "hidden": false
+              },
+              {
+                "name": "The Righteous Path",
+                "steamKey": "therighteouspath",
+                "description": "Transform the Red Telephone",
+                "hidden": false
+              },
+              {
+                "name": "Do not be Afraid",
+                "steamKey": "donotbeafraid",
+                "description": "Equip a \"Sacred\" Charm",
+                "hidden": false
+              },
+              {
+                "name": "My Precious",
+                "steamKey": "myprecious",
+                "description": "Transform a Memory Card into Rainbow Holographic",
+                "hidden": false
+              }
+            ]
+          }
+        ],
+        "totalAchievements": 30,
+        "generatedAt": "2026-05-24T15:43:51.693Z"
+      },
+      "steamAchievementMap": {
+        "drawer0": "Drawer #1",
+        "drawer1": "Drawer #2",
+        "drawer2": "Drawer #3",
+        "drawer3": "Drawer #4",
+        "corporesano": "Corpore Sano",
+        "awdangit": "Aw Dangit!",
+        "luckyday": "Lucky Day",
+        "thiswillhurt": "This will Hurt",
+        "anewhobby": "A new Hobby",
+        "thenumberofthebeast": "The Number of the Beast",
+        "manifesting": "Manifesting",
+        "fullcollection": "Full Collection",
+        "supermegaultraultimatewin": "Super Mega Ultra Ultimate Win",
+        "thestructure": "The Structure",
+        "patternrecognition": "Patterns Recognition",
+        "itsnotanaddiction": "It's Not an Addiction",
+        "itsdedication": "It's Dedication",
+        "allmyhardearnedmoney": "All My Hard Earned Money",
+        "neardeathexperience": "Near Death Experience",
+        "cultist": "Cultist",
+        "rentier": "Rentier",
+        "omnipotent": "Omnipotent",
+        "therighteouspath": "The Righteous Path",
+        "divineintervention": "Divine Intervention",
+        "donotbeafraid": "Do not be Afraid",
+        "completeddatabase": "Database Complete",
+        "ascension": "Ascension",
+        "myprecious": "My Precious",
+        "thelordofthepit": "The Lord of the Pit",
+        "scrooge": "Scrooge"
+      },
+      "achievementCount": 30,
+      "name": "CloverPit",
+      "id": "steam-3314790",
+      "processNames": [
+        "CloverPit.exe"
+      ],
+      "saveLocations": [],
+      "scanTargets": []
+    },
+    {
+      "steamAppId": 2835570,
+      "checklistTemplate": {
+        "zones": [
+          {
+            "name": "Histoire principale",
+            "items": [
+              {
+                "name": "70K",
+                "steamKey": "ach1",
+                "description": "Beat the game.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Collection",
+            "items": [
+              {
+                "name": "Full House",
+                "steamKey": "ach12",
+                "description": "Use all items in a single turn in 'Double or Nothing'.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Autres",
+            "items": [
+              {
+                "name": "Bronze Gates",
+                "steamKey": "ach2",
+                "description": "It rains metal here.",
+                "hidden": false
+              },
+              {
+                "name": "Chasing Losses",
+                "steamKey": "ach3",
+                "description": "Consume the 'Double or Nothing' pills.",
+                "hidden": false
+              },
+              {
+                "name": "Overdose",
+                "steamKey": "ach4",
+                "description": "Start the 'Double or Nothing' mode 10 times.",
+                "hidden": false
+              },
+              {
+                "name": "Nope!",
+                "steamKey": "ach5",
+                "description": "Cash out immediately in 'Double or Nothing'.",
+                "hidden": false
+              },
+              {
+                "name": "140K",
+                "steamKey": "ach6",
+                "description": "Double your earnings in 'Double or Nothing' and win.",
+                "hidden": false
+              },
+              {
+                "name": "1000K",
+                "steamKey": "ach7",
+                "description": "Cash out over 1,000,000 in 'Double or Nothing'.",
+                "hidden": false
+              },
+              {
+                "name": "Coin Flip",
+                "steamKey": "ach8",
+                "description": "Successfully shoot yourself with a blank, facing 50/50 odds.",
+                "hidden": false
+              },
+              {
+                "name": "Digita, Orava and Koni",
+                "steamKey": "ach9",
+                "description": "Breakfast of champions.",
+                "hidden": false
+              },
+              {
+                "name": "Know When To Quit",
+                "steamKey": "ach10",
+                "description": "Lose more than 1000K in 'Double or Nothing'.",
+                "hidden": false
+              },
+              {
+                "name": "Name Taken",
+                "steamKey": "ach11",
+                "description": "Deicide.",
+                "hidden": false
+              },
+              {
+                "name": "Why?",
+                "steamKey": "ach13",
+                "description": "Uncover a live round with the magnifier and shoot yourself.",
+                "hidden": false
+              },
+              {
+                "name": "Soak It In",
+                "steamKey": "ach14",
+                "description": "Listen to the music in the nightclub for over a minute.",
+                "hidden": false
+              },
+              {
+                "name": "Going Out With Style!",
+                "steamKey": "ach15",
+                "description": "Saw off the barrel, shoot yourself, and die.",
+                "hidden": false
+              },
+              {
+                "name": "High Rollers",
+                "steamKey": "ach16",
+                "description": "Check the leaderboard.",
+                "hidden": false
+              }
+            ]
+          }
+        ],
+        "totalAchievements": 16,
+        "generatedAt": "2026-05-25T16:43:20.116Z"
+      },
+      "steamAchievementMap": {
+        "ach1": "70K",
+        "ach2": "Bronze Gates",
+        "ach3": "Chasing Losses",
+        "ach4": "Overdose",
+        "ach5": "Nope!",
+        "ach6": "140K",
+        "ach7": "1000K",
+        "ach8": "Coin Flip",
+        "ach9": "Digita, Orava and Koni",
+        "ach10": "Know When To Quit",
+        "ach11": "Name Taken",
+        "ach12": "Full House",
+        "ach13": "Why?",
+        "ach14": "Soak It In",
+        "ach15": "Going Out With Style!",
+        "ach16": "High Rollers"
+      },
+      "achievementCount": 16,
+      "name": "Buckshot Roulette",
+      "id": "buckshot-roulette",
+      "processNames": [],
+      "saveLocations": [],
+      "scanTargets": []
+    },
+    {
+      "steamAppId": 3892270,
+      "checklistTemplate": {
+        "zones": [
+          {
+            "name": "Exploration",
+            "items": [
+              {
+                "name": "You reached...PEAK!",
+                "steamKey": "ach_misc_peak",
+                "description": "I think you'd also enjoy climbing a mountain with your friends?",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Collection",
+            "items": [
+              {
+                "name": "All on Red",
+                "steamKey": "ach_cha_f1_roulette",
+                "description": "Bet a lot of money on Roulette on Floor 1.",
+                "hidden": false
+              },
+              {
+                "name": "Clean Fall",
+                "steamKey": "ach_cha_f2_plinko",
+                "description": "Win 24X on Plinko on Floor 2.",
+                "hidden": false
+              },
+              {
+                "name": "HARDER",
+                "steamKey": "ach_money_10m",
+                "description": "Collect $10M.",
+                "hidden": false
+              },
+              {
+                "name": "BETTER",
+                "steamKey": "ach_money_100m",
+                "description": "Collect $100M.",
+                "hidden": false
+              },
+              {
+                "name": "FASTER",
+                "steamKey": "ach_money_1b",
+                "description": "Collect $1B.",
+                "hidden": false
+              },
+              {
+                "name": "STRONGER",
+                "steamKey": "ach_money_10b",
+                "description": "Collect $10B.",
+                "hidden": false
+              },
+              {
+                "name": "WORK IS NEVER OVER!",
+                "steamKey": "ach_money_100b",
+                "description": "Collect $100B.",
+                "hidden": false
+              },
+              {
+                "name": "Let It Ride!",
+                "steamKey": "ach_ending_coinflip_won",
+                "description": "Like a true gambler, you risked it all and became filthy rich (again).",
+                "hidden": false
+              },
+              {
+                "name": "Big Spender 3",
+                "steamKey": "ach_cha_f3_bigspender3",
+                "description": "Bet a lot of money across all games on Floor 3.",
+                "hidden": false
+              },
+              {
+                "name": "Big Spender 4",
+                "steamKey": "ach_cha_f4_bigspender4",
+                "description": "Bet a lot of money across all games on Floor 4.",
+                "hidden": false
+              },
+              {
+                "name": "Ball in Motion",
+                "steamKey": "ach_cha_f4_roulette",
+                "description": "Spend a lot of money on Roulette on Floor 4.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Autres",
+            "items": [
+              {
+                "name": "End of the Line",
+                "steamKey": "ach_ending_coinflip_lost",
+                "description": "You won't learn, won't you?",
+                "hidden": false
+              },
+              {
+                "name": "Big Spender",
+                "steamKey": "ach_cha_f1_bigspender",
+                "description": "Spend a lot of money on Floor 1.",
+                "hidden": false
+              },
+              {
+                "name": "Lucky 7",
+                "steamKey": "ach_cha_f1_craps",
+                "description": "Get 7 on your first roll on Street Craps on Floor 1.",
+                "hidden": false
+              },
+              {
+                "name": "High Roller",
+                "steamKey": "ach_cha_f1_highroller",
+                "description": "Place a very big bet on Floor 1.",
+                "hidden": false
+              },
+              {
+                "name": "Lucky Streak",
+                "steamKey": "ach_cha_f1_luckystreak",
+                "description": "Win 3 games in a row on Floor 1.",
+                "hidden": false
+              },
+              {
+                "name": "Jackpot Hunter",
+                "steamKey": "ach_cha_f1_slots",
+                "description": "Win with 10X on Slot Machine on Floor 1.",
+                "hidden": false
+              },
+              {
+                "name": "YARLL!!!",
+                "steamKey": "ach_cha_f1_duckrace",
+                "description": "Bet on YARL and win on Duck Race on Floor 1.",
+                "hidden": false
+              },
+              {
+                "name": "Big Spender 2",
+                "steamKey": "ach_cha_f2_bigspender2",
+                "description": "Spend a lot of money on Floor 2.",
+                "hidden": false
+              },
+              {
+                "name": "Winner Winner Penguin Dinner",
+                "steamKey": "ach_cha_f2_crossyroad",
+                "description": "Win at least \"3X\" 2 times in a row on Penguin Cross on Floor 2.",
+                "hidden": false
+              },
+              {
+                "name": "Roll the Odds",
+                "steamKey": "ach_cha_f2_dice",
+                "description": "Profit a lot of money on HiLo on Floor 2.",
+                "hidden": false
+              },
+              {
+                "name": "High Roller 2",
+                "steamKey": "ach_cha_f2_highroller2",
+                "description": "Place a very big bet on Floor 2.",
+                "hidden": false
+              },
+              {
+                "name": "Spot On",
+                "steamKey": "ach_cha_f2_keno",
+                "description": "Bet a lot of money on Keno on Floor 2.",
+                "hidden": false
+              },
+              {
+                "name": "Spin Streak",
+                "steamKey": "ach_cha_f2_moneywheel",
+                "description": "Win 3 games in a row with a lot of money on Money Wheel on Floor 2.",
+                "hidden": false
+              },
+              {
+                "name": "Poker Face",
+                "steamKey": "ach_cha_f3_poker",
+                "description": "Don't lock cards and win with a hand equal to or better than Two of a Kind on 1P Poker on Floor 3.",
+                "hidden": false
+              },
+              {
+                "name": "Natural Roller",
+                "steamKey": "ach_cha_f3_craps",
+                "description": "Win on Street Craps during the point phase on Floor 3.",
+                "hidden": false
+              },
+              {
+                "name": "Traffic Monster",
+                "steamKey": "ach_cha_f3_crossyroad",
+                "description": "Win at least 4X on Penguin Cross on Floor 3.",
+                "hidden": false
+              },
+              {
+                "name": "Perfect Sweep",
+                "steamKey": "ach_cha_f3_minesweeper",
+                "description": "Win at least 20X on Mine Sweeper on Floor 3.",
+                "hidden": false
+              },
+              {
+                "name": "High Roller 4",
+                "steamKey": "ach_cha_f4_highroller4",
+                "description": "Place a very big bet on Floor 4.",
+                "hidden": false
+              },
+              {
+                "name": "Not Feeling It",
+                "steamKey": "ach_misc_notogamble",
+                "description": "You coward...",
+                "hidden": false
+              },
+              {
+                "name": "The Gambler's Blessing",
+                "steamKey": "ach_misc_yestogamblewin",
+                "description": "Be worthy enough to play our game.",
+                "hidden": false
+              },
+              {
+                "name": "Unlucky :(",
+                "steamKey": "ach_misc_yestogamblelose",
+                "description": "Try again (hehe).",
+                "hidden": false
+              },
+              {
+                "name": "Real Gambling Is Not Cool.",
+                "steamKey": "ach_misc_gethelp",
+                "description": "Check out the Gambling Support Services around the world and educate yourself.",
+                "hidden": false
+              },
+              {
+                "name": "...And They Lived Happily After",
+                "steamKey": "ach_ending_debt_paid",
+                "description": "Quit gambling and start a new life, congrats!",
+                "hidden": false
+              },
+              {
+                "name": "No Bust Run",
+                "steamKey": "ach_cha_f1_blackjack",
+                "description": "Win 4 games in a row on Blackjack on Floor 1.",
+                "hidden": false
+              },
+              {
+                "name": "Risky Move",
+                "steamKey": "ach_cha_f1_blackjack2",
+                "description": "Win on Blackjack with a hand value less than 10 on Floor 1.",
+                "hidden": false
+              },
+              {
+                "name": "Spin The Wheel",
+                "steamKey": "ach_cha_f1_wheeloffortune",
+                "description": "Win 3 games by betting a lot of money on Wheel of Fortune on Floor 1.",
+                "hidden": false
+              },
+              {
+                "name": "Greed Test",
+                "steamKey": "ach_cha_f2_crash",
+                "description": "Win at least 10X on Crash on Floor 2.",
+                "hidden": false
+              },
+              {
+                "name": "Lucky Streak 2",
+                "steamKey": "ach_cha_f2_luckystreak2",
+                "description": "Win 4 games in a row on Floor 2.",
+                "hidden": false
+              },
+              {
+                "name": "No Safe Rolls",
+                "steamKey": "ach_cha_f3_dice",
+                "description": "Win 10x on HiLo on Floor 3.",
+                "hidden": false
+              },
+              {
+                "name": "Step Into Fire",
+                "steamKey": "ach_cha_f3_dragontower",
+                "description": "Lose 4 times in a row on Dragon Tower on Floor 3.",
+                "hidden": false
+              },
+              {
+                "name": "High Roller 3",
+                "steamKey": "ach_cha_f3_highroller3",
+                "description": "Place a very big bet on Floor 3.",
+                "hidden": false
+              },
+              {
+                "name": "Lucky Streak 3",
+                "steamKey": "ach_cha_f3_luckystreak3",
+                "description": "Win 5 games in a row on Floor 3.",
+                "hidden": false
+              },
+              {
+                "name": "Keep It Spinning",
+                "steamKey": "ach_cha_f3_wheeloffortune",
+                "description": "Spend a lot of money on Wheel of Fortune on Floor 3.",
+                "hidden": false
+              },
+              {
+                "name": "House Breaker",
+                "steamKey": "ach_cha_f4_blackjack",
+                "description": "Win a lot of money on Blackjack on Floor 4.",
+                "hidden": false
+              },
+              {
+                "name": "Safe Exit",
+                "steamKey": "ach_cha_f4_crash",
+                "description": "Win 4 times in a row on Crash on Floor 4.",
+                "hidden": false
+              },
+              {
+                "name": "No Hesitation",
+                "steamKey": "ach_cha_f4_crossyroad",
+                "description": "Spend a lot of money on Penguin Cross on Floor 4.",
+                "hidden": false
+              },
+              {
+                "name": "Flameproof",
+                "steamKey": "ach_cha_f4_dragontower",
+                "description": "Win at least \"3x\" 3 times in a row on Dragon Tower on Floor 4.",
+                "hidden": false
+              },
+              {
+                "name": "Unstoppable Quack",
+                "steamKey": "ach_cha_f4_duckrace",
+                "description": "Win 2 games in a row on Duck Race on Floor 4.",
+                "hidden": false
+              },
+              {
+                "name": "Marked to Win",
+                "steamKey": "ach_cha_f4_keno",
+                "description": "Profit a lot of money on Keno on Floor 4.",
+                "hidden": false
+              },
+              {
+                "name": "Lucky Streak 4",
+                "steamKey": "ach_cha_f4_luckystreak4",
+                "description": "Win 5 games in a row on Floor 4.",
+                "hidden": false
+              },
+              {
+                "name": "No Detonations",
+                "steamKey": "ach_cha_f4_minesweeper",
+                "description": "Win \"5X\" 3 times in a row on Mine Sweeper on Floor 4.",
+                "hidden": false
+              },
+              {
+                "name": "High Risk Wedge",
+                "steamKey": "ach_cha_f4_moneywheel",
+                "description": "Lose 5 games in a row on Money Wheel on Floor 4.",
+                "hidden": false
+              },
+              {
+                "name": "Straight Down",
+                "steamKey": "ach_cha_f4_plinko",
+                "description": "Lose 7 games in a row on Plinko on Floor 4.",
+                "hidden": false
+              }
+            ]
+          }
+        ],
+        "totalAchievements": 55,
+        "generatedAt": "2026-07-29T21:46:24.367Z"
+      },
+      "steamAchievementMap": {
+        "ach_ending_coinflip_lost": "End of the Line",
+        "ach_cha_f1_bigspender": "Big Spender",
+        "ach_cha_f1_craps": "Lucky 7",
+        "ach_cha_f1_highroller": "High Roller",
+        "ach_cha_f1_luckystreak": "Lucky Streak",
+        "ach_cha_f1_roulette": "All on Red",
+        "ach_cha_f1_slots": "Jackpot Hunter",
+        "ach_cha_f1_duckrace": "YARLL!!!",
+        "ach_cha_f2_bigspender2": "Big Spender 2",
+        "ach_cha_f2_crossyroad": "Winner Winner Penguin Dinner",
+        "ach_cha_f2_dice": "Roll the Odds",
+        "ach_cha_f2_highroller2": "High Roller 2",
+        "ach_cha_f2_keno": "Spot On",
+        "ach_cha_f2_moneywheel": "Spin Streak",
+        "ach_cha_f2_plinko": "Clean Fall",
+        "ach_cha_f3_poker": "Poker Face",
+        "ach_cha_f3_craps": "Natural Roller",
+        "ach_cha_f3_crossyroad": "Traffic Monster",
+        "ach_cha_f3_minesweeper": "Perfect Sweep",
+        "ach_cha_f4_highroller4": "High Roller 4",
+        "ach_money_10m": "HARDER",
+        "ach_money_100m": "BETTER",
+        "ach_money_1b": "FASTER",
+        "ach_money_10b": "STRONGER",
+        "ach_money_100b": "WORK IS NEVER OVER!",
+        "ach_misc_notogamble": "Not Feeling It",
+        "ach_misc_yestogamblewin": "The Gambler's Blessing",
+        "ach_misc_yestogamblelose": "Unlucky :(",
+        "ach_misc_peak": "You reached...PEAK!",
+        "ach_misc_gethelp": "Real Gambling Is Not Cool.",
+        "ach_ending_coinflip_won": "Let It Ride!",
+        "ach_ending_debt_paid": "...And They Lived Happily After",
+        "ach_cha_f1_blackjack": "No Bust Run",
+        "ach_cha_f1_blackjack2": "Risky Move",
+        "ach_cha_f1_wheeloffortune": "Spin The Wheel",
+        "ach_cha_f2_crash": "Greed Test",
+        "ach_cha_f2_luckystreak2": "Lucky Streak 2",
+        "ach_cha_f3_bigspender3": "Big Spender 3",
+        "ach_cha_f3_dice": "No Safe Rolls",
+        "ach_cha_f3_dragontower": "Step Into Fire",
+        "ach_cha_f3_highroller3": "High Roller 3",
+        "ach_cha_f3_luckystreak3": "Lucky Streak 3",
+        "ach_cha_f3_wheeloffortune": "Keep It Spinning",
+        "ach_cha_f4_bigspender4": "Big Spender 4",
+        "ach_cha_f4_blackjack": "House Breaker",
+        "ach_cha_f4_crash": "Safe Exit",
+        "ach_cha_f4_crossyroad": "No Hesitation",
+        "ach_cha_f4_dragontower": "Flameproof",
+        "ach_cha_f4_duckrace": "Unstoppable Quack",
+        "ach_cha_f4_keno": "Marked to Win",
+        "ach_cha_f4_luckystreak4": "Lucky Streak 4",
+        "ach_cha_f4_minesweeper": "No Detonations",
+        "ach_cha_f4_moneywheel": "High Risk Wedge",
+        "ach_cha_f4_plinko": "Straight Down",
+        "ach_cha_f4_roulette": "Ball in Motion"
+      },
+      "achievementCount": 55,
+      "id": "steam-3892270",
+      "name": "Gamble With Your Friends",
+      "processNames": [
+        "Gamble With Your Friends.exe"
+      ],
+      "saveLocations": [],
+      "scanTargets": []
+    }
+  ]
+}

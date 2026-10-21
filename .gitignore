@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+release/
+*.log
+.env
+.env.local
+.env.*.local
+desktop/steam-config.json
+.DS_Store
+.vscode/
+.idea/
